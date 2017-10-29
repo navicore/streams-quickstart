@@ -13,7 +13,8 @@ object TweetExample extends App {
 
   final case class Tweet(author: Author, timestamp: Long, body: String) {
     def hashtags: Set[Hashtag] = body.split(" ").collect {
-      case t if t.startsWith("#") => Hashtag(t.replaceAll("[^#\\w]", ""))
+      //case t if t.startsWith("#") => Hashtag(t.replaceAll("[^#\\w]", ""))   // ejs WTF???
+      case t if t.startsWith("#") => Hashtag(t)
     }.toSet
   }
 

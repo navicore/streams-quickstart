@@ -1,3 +1,4 @@
+factor*.txt
 .ensime
 .ensime_cache/
 *.class
