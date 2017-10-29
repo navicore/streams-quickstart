@@ -11,4 +11,3 @@ class Fraction(n: Int, d: Int) {
 
   override def toString: String = numer + " / " + denom
 }
-

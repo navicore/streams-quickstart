@@ -1,5 +1,3 @@
 package onextent.akka.quckstart
 
-class AppWrapper extends App {
-
-}
+class AppWrapper extends App {}
